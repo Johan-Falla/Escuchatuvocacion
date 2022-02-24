@@ -529,26 +529,4 @@ footer button:active{
 }
 
 
-.ver_mas{
-	width: 70%;
-	background-color: black;
-	color: white;
-	max-width: 1600px;
-	margin: 0px 30px;
-}
-
-.ver_mas h2{
-	text-align: center;
-	font-size: 15px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	
-}
-.ver_mas button{
-	background: none;
-	color: white;
-	border-style: none;
-	cursor: pointer;
-	margin-left: 20px;
-}
 
