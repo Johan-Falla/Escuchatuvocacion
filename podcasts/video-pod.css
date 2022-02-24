@@ -1,0 +1,61 @@
+*,*::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Configuración Global Basica*/
+*{
+	padding: 0px;
+	margin:0px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	font-family: Roboto;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: Roboto;
+}
+
+.reproductorpodcast{
+    width: 70%;
+    position: relative;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+
+}
+
+.reproductorpodcast::after{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-radius: 10px;
+
+
+}
+
+.podcast{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+
+}
+
+
+
+

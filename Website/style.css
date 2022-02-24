@@ -1,0 +1,465 @@
+/* Configuración Global Basica*/
+*{
+	padding: 0px;
+	margin:0px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	font-family: Roboto;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: Roboto;
+}
+
+a{
+	text-decoration: none;
+	color:white;
+}
+
+a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+/* Ajustes Globales de Header (Html, CSS Y JavaScript)*/
+.header {
+  background-color: black;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  text-align: center;
+  z-index: 99999;
+}
+
+.ajust-dimentions{
+	width: 90%;
+	margin: auto;
+
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo-nav-link{
+	height: 10px;
+}
+
+.logo-nav-link img{
+	height: 50px;
+	position: absolute;
+	top: 15px;
+	margin: 0 25px;
+		
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover{
+  background-color: none;
+  color: #ADADAD;
+  transition: 0.5s;
+}
+
+/* TOGGLE Nav*/
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+
+/* MOBILE Nav*/
+@media (max-width: 1200px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 80px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #ADADAD;
+  }
+
+  .nav-toggle {
+    display: block;
+	position: absolute;
+	top: 10px;
+	right: 8%;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+	
+}
+
+
+/* Confuración Subtítulo "Pre-Cards" menú index.html */ 
+.Sub-Title{
+	width: 100%;
+	text-align: center;
+	margin: 50px 0px;
+	font-size: 15px;
+}
+
+.Sub-Title img{
+	width: 180px;
+	margin-top: 15px;
+}
+
+/* Media Query slider responsive, pantalla móviles */
+@media (max-width: 500px){
+	.Sub-Title{
+	width: 100%;
+	text-align: center;
+	margin: 50px 0px;
+	font-size: 10px;
+	}
+	
+	.Sub-Title img{
+	width: 120px;
+	margin-top: 15px;
+}
+}
+
+/* Configuración de Tarjetas menú index.html */
+.main-cards{
+	width:80%;
+	max-width: 1200px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: auto;
+	
+}
+
+/* Configuración Global Cards */
+.card{
+	width: 300px;
+	margin: 20px;
+	overflow: hidden;
+	background: black;
+	color: white;
+	text-align:center;
+	min-width: 300px;
+	
+}
+
+.card img{
+	width: 100%;
+}
+
+.card h3{
+	font-size: 15px;
+	
+}
+
+.card h4{
+	color:#FFDD00;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
+.card:hover h3{
+	color:#ADADAD;
+}
+
+
+.card:active h3{
+	color:#474747;
+}
+
+
+/* Configuración Botón "TODOS LOS PODCASTS AQUÍ" --->index.html*/
+.more-button{
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+	padding-bottom:50px;
+	outline:none;
+	border:none;
+}
+
+.more-button button{
+	border-bottom: none;
+	background: black;
+	color: #FFDD00;
+	width: 250px;
+	height: 50px;
+	text-decoration: none;
+	font-family: Roboto;
+	outline: none;
+	border:none;
+	cursor:pointer;
+} 
+
+.more-button button:hover{
+	color:#B79400;
+}
+
+
+/* Configuración Div Primario antes de Cards podcasts.html */
+.first-container-cards{
+	margin-top: 150px;
+	margin-bottom: 80px;
+}
+
+.first-container-cards h2{
+	text-align: center;
+	font-size: 20px;
+}
+
+/* Configuración Cards menú podcasts.html */
+.main-cards-podcasts{
+	margin: auto;
+	width:80%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+}
+
+/* Configuración Contenedor primario menú proyect.html */
+.proyect-container{
+	margin: 105px 150px;
+}
+
+.Titulos{
+	margin-top: 150px;
+	width: 100%;
+	text-align: center;
+	font-size: 13px
+}
+
+
+.proyect-container h1{
+	font-size: 25px;
+	text-align: center;
+}
+
+.proyect-info{
+	margin-top:10px;
+}
+
+.proyect-divs h2{
+	margin-bottom: 20px;
+}
+
+.proyect-divs p{
+	margin: 0px 50px;
+}
+.proyect-divs ul li{
+	margin: 0px 70px;
+}
+
+/* media query menú Proyect.html */
+
+@media (max-width: 500px){
+	
+}
+
+/* Configuración Global de Barrita */
+#barrita{
+	width: 150px;
+}
+
+/* Configuración Cards de Miembros del Proyecto */
+.card-p{
+	width: 300px;
+	height: 420px;
+	margin: 20px 40px;
+	overflow: hidden;
+	background: black;
+	color: white;
+	text-align:center;
+	min-width: 300px;
+	
+}
+
+.cards-members{
+	margin: 200px auto;
+	width:100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.card-p img{
+	width: 100%;
+	height: 330px;
+}
+
+.text-info{
+	margin: 10px;
+}
+
+.card-p h3{
+	color: #FFDD00;
+}
+
+/* Contacto.html */
+.menu-contactanos{
+	margin: 150px 0px;
+	text-align: center;
+}
+
+
+#barrita-2{
+	width: 100px;
+	margin: 20px;
+}
+
+#minitexto{
+	margin-top: 80px;
+
+}
+.correo-resaltado{
+	display:inline-block;
+	background: black;
+	color: white;
+	padding: 20px;
+	margin: 20px;
+}
+
+.correo-resaltado:hover{
+	display:inline-block;
+	background: black;
+	color: #FFDD00;
+	padding: 20px;
+	margin: 20px;
+}
+
+/* Social Media Buttons */
+
+#siguenos-letter{
+	margin-top: 80px;
+}
+
+.social-media-buttons i{
+	color: black;
+	font-size: 35px;
+	padding: 15px;
+}
+
+/* Configuración Global "FOOTER" */
+footer{
+	width: 100%;
+	height: 80px;
+	background: black;
+	color:white;
+	padding: 15px;
+	line-height: 1.5em;
+	font-size: 18px;
+	text-align: center;
+	margin-top: auto;
+		
+}
+
+footer button{
+	background: none;
+	color: white;
+	font-size: 20px;
+	padding: 0 8px;
+	border: none;
+	border-bottom-style: none;
+	cursor: pointer;
+}
+
+footer button:hover{
+	background: none;
+	color: #ADADAD;
+	font-size: 18px;
+	border: none;
+	border-bottom-style: none;
+	cursor: pointer;
+	transition: .2s;
+}
+
+footer button:active{
+	background: none;
+	color: #474747;
+	font-size: 18px;
+	border: none;
+	border-bottom-style: none;
+	cursor: pointer;
+}
+
+/*Pantalla de ejemplo Podcast */
+
+
