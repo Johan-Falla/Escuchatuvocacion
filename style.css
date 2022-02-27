@@ -263,6 +263,24 @@ a:visited{
     text-decoration: none;
 }
 
+.card i{
+  font-size: 40px;
+  color: white;
+  position: relative;
+  bottom: 140px;
+  left: 140px;
+  opacity: 0%;
+  transform: scale(1.0);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card:hover i{
+  opacity: 60%;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
 /* Configuración Botón "TODOS LOS PODCASTS AQUÍ" --->index.html*/
 .more-button{
 	align-content: center;
@@ -351,8 +369,10 @@ a:visited{
 
 /* media query menú Proyect.html */
 
-@media (max-width: 500px){
-	
+@media (max-width: 1200px){
+	.proyect-container{
+    margin: 50px 30px;
+  }
 }
 
 /* Configuración Global de Barrita */
@@ -434,6 +454,8 @@ a:visited{
     text-decoration: none;
 }
 
+
+
 /* Contacto.html */
 .menu-contactanos{
 	margin: 150px 0px;
@@ -466,15 +488,31 @@ a:visited{
 	margin: 20px;
 }
 
-/* Social Media Buttons */
-
-#siguenos-letter{
-	margin-top: 80px;
+.black_letter{
+  background-color: black;
+  color: white;
+  width: 60%;
+  height: 200px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
 }
 
+
+.black_letter h3{
+  padding: 20px;
+}
+
+.black_letter p{
+  padding: 5px;
+}
+/* Social Media Buttons */
+
+
 .social-media-buttons i{
-	color: black;
-	font-size: 35px;
+	color: white;
+	font-size: 30px;
 	padding: 15px;
 }
 
@@ -527,6 +565,7 @@ footer button:active{
 	display: flex;
 	text-align: center;
 }
+
 
 
 
