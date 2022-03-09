@@ -499,6 +499,11 @@ a:visited{
   border-radius: 10px;
 }
 
+@media (max-width: 590px) {
+	.black_letter{
+	 height: 250px;
+	}
+}
 
 .black_letter h3{
   padding: 20px;
