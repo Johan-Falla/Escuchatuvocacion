@@ -193,12 +193,13 @@ a:visited{
 /* Configuración Global Cards */
 
 .cards{
-	width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-	margin: 20px auto;
-	justify-content: center;
-	max-width: 1400px;
+    margin: 20px auto;
+    justify-content: center;
+    border-radius: 10px;
+    max-width: 1400px;
 }
 
 .card{
@@ -384,12 +385,13 @@ a:visited{
 /* Configuración Cards de Miembros del Proyecto */
 
 .cards{
-	width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-	margin: 20px auto;
-	justify-content: center;
-	max-width: 1400px;
+    margin: 20px auto;
+    justify-content: center;
+    border-radius: 10px;
+    max-width: 1400px;
 }
 
 .card_M{
