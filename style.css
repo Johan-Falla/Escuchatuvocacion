@@ -245,7 +245,11 @@ a:visited{
     margin-bottom: 8px;
 }
 
+.card:hover{
+    border-radius: 10px;
+}
 .card:hover img{
+    border-radius: 10px 10px 0px 0px;
     opacity: 100%;
     overflow: hidden;
     transform: scale(1.0);
