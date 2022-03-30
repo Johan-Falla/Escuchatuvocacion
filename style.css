@@ -248,10 +248,6 @@ a:visited{
 .card:hover{
     border-radius: 10px 10px 0px 0px;
 }
-
-.card hover{
-	border-radius: 10px 10px 0px 0px;
-}
 	
 .card:hover img{
     border-radius: 10px 10px 0px 0px;
