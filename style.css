@@ -24,6 +24,66 @@ a:visited{
 }
 
 
+/*config Ventana Emergente Home*/
+
+.modal{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+}
+
+.modal-contenido{
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.botonazo{
+  margin: 30px auto;
+  background-color: black;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 1px;
+}
+
+.botonazo h6{
+  margin-top: 7px;
+}
+.modal-contenido h4{
+  padding: 10px 30px;
+}
+
+.modal-contenido h5{
+  padding: 0px 30px;
+  margin-top: 60px;
+}
+
+
+#cerrar{
+  display: none;
+}
+
+.modal-contenido label{
+  cursor: pointer;
+  color: black;
+  position:relative;
+  top: 5px;
+  left: 135px;
+  z-index: 99999999;
+}
+
+#cerrar:checked + label, #cerrar:checked + .modal {
+  display:none;
+}
+
 /* Ajustes Globales de Header (Html, CSS Y JavaScript)*/
 .header {
   background-color: black;
